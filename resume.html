@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;600&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header header-resume">
+        <div class="container">
+            <h1 class="header-resume__title title">Картотека
+                с персоналом</h1>
+            <p class="header-resume__subtitle">1753 активных резюме</p>
+        </div>
+    </header>
+    <div class="wrapper wrapper-resume">
+        <div class="container">
+            <div class="wrapper__inner">
+                <aside class="aside">
+                    <form class="aside__form aside-form aside-form--active" action="#">
+                        <button class="aside-form__btn" type="button">Фильтр</button>
+                        <div class="aside-form__inner">
+                            <div class="aside-form__top aside-form-top">
+                                <h5 class="aside-form-top__title">Раздел</h5>
+                                <div class="aside-form-top__box">
+                                    <input class="aside-form-top__box-input box-tick" type="checkbox" id="checbox1">
+                                    <label for="checbox1"></label>
+                                    <p class="aside-form-top__box-text">Все вакансии</p>
+                                </div>
+                                <div class="aside-form-top__box">
+                                    <input class="aside-form-top__box-input box-tick" type="checkbox" checked
+                                        id="checbox2">
+                                    <label for="checbox2"></label>
+                                    <p class="aside-form-top__box-text">Вакансии</p>
+                                </div>
+                                <div class="aside-form-top__box">
+                                    <input class="aside-form-top__box-input box-tick" type="checkbox" id="checbox3">
+                                    <label for="checbox3"></label>
+                                    <p class="aside-form-top__box-text">Халтуры</p>
+                                </div>
+                            </div>
+                            <div class="aside-form__date aside-form-date">
+                                <h5 class="aside-form-date__title">Дата</h5>
+                                <div class="aside-form-date__box">
+                                    <input class="aside-form-date__box-input" type="text" placeholder="20.10.2021">
+                                    <input class="aside-form-date__box-input" type="text" placeholder="23.10.2021">
+                                </div>
+                            </div>
+                            <div class="aside-form__rate aside-form-rate">
+                                <h5 class="aside-form-rate__title">Оплата за смену</h5>
+                                <div class="aside-form-rate__box">
+                                    <input class="aside-form-rate__box-input" type="number" placeholder="От">
+                                    <input class="aside-form-rate__box-input" type="number" placeholder="До">
+                                </div>
+                            </div>
+                            <div class="aside-form__company aside-form-company">
+                                <h5 class="aside-form-company__title">Компания</h5>
+                                <div class="aside-form-company__box">
+                                    <input class="aside-form-company__box-input" type="search"
+                                        placeholder="Найти компанию">
+                                    <button class="aside-form-company__box-button" type="submit"></button>
+                                </div>
+                            </div>
+                            <div class="aside-form__terms aside-form-terms">
+                                <h5 class="aside-form-terms__title">Условия</h5>
+                                <div class="aside-form-terms__box">
+                                    <input class="aside-form-terms__box-input box-tick" type="checkbox" id="checbox4">
+                                    <label for="checbox4"></label>
+                                    <p class="aside-form-terms__box-text">Питание</p>
+                                </div>
+                                <div class="aside-form-terms__box">
+                                    <input class="aside-form-terms__box-input box-tick" type="checkbox" id="checbox5">
+                                    <label for="checbox5"></label>
+                                    <p class="aside-form-terms__box-text">Проживание</p>
+                                </div>
+                                <div class="aside-form-terms__box">
+                                    <input class="aside-form-terms__box-input box-tick" type="checkbox" id="checbox6">
+                                    <label for="checbox6"></label>
+                                    <p class="aside-form-terms__box-text">Развозка</p>
+                                </div>
+                            </div>
+                            <div class="aside-form__documents aside-form-documents">
+                                <h5 class="aside-form-documents__title">Документы</h5>
+                                <div class="aside-form-documents__inner">
+                                    <div class="aside-form-documents__box aside-form-documents-box">
+                                        <div class="aside-form-documents-box__item">
+                                            <input class="aside-form-documents-box__item-input box-tick" type="checkbox"
+                                                id="checbox7">
+                                            <label for="checbox7"></label>
+                                            <p class="aside-form-documents-box__item-text">Паспорт</p>
+                                        </div>
+                                        <div class="aside-form-documents-box__item">
+                                            <input class="aside-form-documents-box__item-input box-tick" type="checkbox"
+                                                id="checbox8">
+                                            <label for="checbox8"></label>
+                                            <p class="aside-form-documents-box__item-text">Медосмотр</p>
+                                        </div>
+                                        <div class="aside-form-documents-box__item">
+                                            <input class="aside-form-documents-box__item-input box-tick" type="checkbox"
+                                                id="checbox9">
+                                            <label for="checbox9"></label>
+                                            <p class="aside-form-documents-box__item-text">Медосмотр</p>
+                                        </div>
+                                    </div>
+                                    <div class="aside-form-documents__box aside-form-documents-box">
+                                        <div class="aside-form-documents-box__item">
+                                            <input class="aside-form-documents-box__item-input box-tick" type="checkbox"
+                                                id="checbox10">
+                                            <label for="checbox10"></label>
+                                            <p class="aside-form-documents-box__item-text">Гражданство</p>
+                                        </div>
+                                        <div class="aside-form-documents-box__item">
+                                            <input class="aside-form-documents-box__item-input box-tick" type="checkbox"
+                                                id="checbox11">
+                                            <label for="checbox11"></label>
+                                            <p class="aside-form-documents-box__item-text">Паспорт</p>
+                                        </div>
+                                        <div class="aside-form-documents-box__item">
+                                            <input class="aside-form-documents-box__item-input box-tick" type="checkbox"
+                                                id="checbox12">
+                                            <label for="checbox12"></label>
+                                            <p class="aside-form-documents-box__item-text">Гражданство</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aside-form__buttons">
+                                <button class="aside-form__buttons-apply" type="submit">Применить</button>
+                                <button class="aside-form__buttons-delete" type="submit">Очистить всё</button>
+                            </div>
+                        </div>
+                    </form>
+                </aside>
+                </aside>
+                <main class="main main-resume">
+                    <section class="main__info main-info">
+                        <div class="main-info__item main-info-item">
+                            <div class="main-info-item__about main-info-item-about">
+                                <div class="main-info-item-about__top main-info-item-about-top">
+                                    <img class="main-info-item-about-top__img" src="images/main-info-about-top-img.png"
+                                        alt="picture">
+                                    <div class="main-info-item-about-top__box">
+                                        <p class="main-info-item-about-top__box-name">Ашот Адренесян</p>
+                                        <p class="main-info-item-about-top__box-rate">от 2000р / смена</p>
+                                        <p class="main-info-item-about-top__box-experience">Опыт работы: <span>без
+                                                опыта</span>
+                                        </p>
+                                    </div>
+                                    <a class="main-info-item-about-top__location" href="#">Москва</a>
+                                </div>
+                                <div class="main-info-item-about__content">
+                                    <h3 class="main-info-item-about__content-title">О соискателе</h3>
+                                    <p class="main-info-item-about__content-text">Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipiscing elit. Lorem ac donec eu dui sem tortor pretium. Eu lacus massa ut
+                                        quam at
+                                        enim, donec consequat. Mauris, aliquet in massa sagittis. Morbi ornare fames
+                                        duis
+                                        enim
+                                        scelerisque.
+                                        <br>
+                                        <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ac donec eu dui
+                                        sem
+                                        tortor pretium. Eu lacus massa ut quam at enim, donec consequat. Mauris, aliquet
+                                        in
+                                        massa sagittis. Morbi ornare fames duis enim scelerisque.
+                                    </p>
+                                </div>
+                                <div class="main-info-item-about__bottom">
+                                    <a class="main-info-item-about__bottom-btn" href="#">Пригласить</a>
+                                    <a class="main-info-item-about__bottom-button" href="#">Добавить в избранное</a>
+                                </div>
+                            </div>
+                            <div class="main-info-item__tags main-info-item-tags">
+                                <div class="main-info-item-tags__skills">
+                                    <h3 class="main-info-item-tags__skills-title">Ключевые навыки</h3>
+                                    <a class="main-info-item-tags__skills-link tags-link" href="#">Умение готовить</a>
+                                    <a class="main-info-item-tags__skills-link tags-link" href="#">Высокая
+                                        работоспособность</a>
+                                </div>
+                                <div class="main-info-item-tags__lang">
+                                    <h3 class="main-info-item-tags__lang-title">Знание русского</h3>
+                                    <a class="main-info-item-tags__lang-link tags-link" href="#">Рзговаривает
+                                        свободно</a>
+                                </div>
+                                <div class="main-info-item-tags__documents main-info-item-tags-documents">
+                                    <h3 class="main-info-item-tags-documents__title">Наличие документов</h3>
+                                    <div class="main-info-item-tags-documents__box">
+                                        <a class="main-info-item-tags-documents__box-link tags-link"
+                                            href="#">Паспорт</a>
+                                        <a class="main-info-item-tags-documents__box-link tags-link"
+                                            href="#">Регистрация</a>
+                                        <a class="main-info-item-tags-documents__box-link tags-link" href="#">Прививка
+                                            covid</a>
+                                    </div>
+                                </div>
+                                <div class="main-info-item-tags__additional main-info-item-tags-additional">
+                                    <h3 class="main-info-item-tags-additional__title">Дополнительно</h3>
+                                    <div class="main-info-item-tags-additional__box">
+                                        <a class="main-info-item-tags-additional__box-link tags-link" href="#">Полная
+                                            занятость</a>
+                                        <a class="main-info-item-tags-additional__box-link tags-link" href="#">Полный
+                                            день</a>
+                                    </div>
+                                    <a class="main-info-item-tags-additional__link tags-link" href="#">Опыт вождения не
+                                        указан</a>
+                                    <a class="main-info-item-tags-additional__link tags-link" href="#">Готов к
+                                        командировкам</a>
+                                </div>
+                                <div class="main-info-item-tags__education">
+                                    <h3 class="main-info-item-tags__education-title">Образование</h3>
+                                    <a class="main-info-item-tags__education-link tags-link" href="#">9 классов</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-info__item main-info-item">
+                            <div class="main-info-item__about main-info-item-about">
+                                <div class="main-info-item-about__top main-info-item-about-top">
+                                    <img class="main-info-item-about-top__img" src="images/main-info-about-top-img.png"
+                                        alt="picture">
+                                    <div class="main-info-item-about-top__box">
+                                        <p class="main-info-item-about-top__box-name">Ашот Адренесян</p>
+                                        <p class="main-info-item-about-top__box-rate">от 2000р / смена</p>
+                                        <p class="main-info-item-about-top__box-experience">Опыт работы: <span>без
+                                                опыта</span>
+                                        </p>
+                                    </div>
+                                    <a class="main-info-item-about-top__location" href="#">Москва</a>
+                                </div>
+                                <div class="main-info-item-about__content">
+                                    <h3 class="main-info-item-about__content-title">О соискателе</h3>
+                                    <p class="main-info-item-about__content-text">Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipiscing elit. Lorem ac donec eu dui sem tortor pretium. Eu lacus massa ut
+                                        quam at
+                                        enim, donec consequat. Mauris, aliquet in massa sagittis. Morbi ornare fames
+                                        duis
+                                        enim
+                                        scelerisque.
+                                        <br>
+                                        <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ac donec eu dui
+                                        sem
+                                        tortor pretium. Eu lacus massa ut quam at enim, donec consequat. Mauris, aliquet
+                                        in
+                                        massa sagittis. Morbi ornare fames duis enim scelerisque.
+                                    </p>
+                                </div>
+                                <div class="main-info-item-about__bottom">
+                                    <a class="main-info-item-about__bottom-btn" href="#">Пригласить</a>
+                                    <a class="main-info-item-about__bottom-button" href="#">Добавить в избранное</a>
+                                </div>
+                            </div>
+                            <div class="main-info-item__tags main-info-item-tags">
+                                <div class="main-info-item-tags__skills">
+                                    <h3 class="main-info-item-tags__skills-title">Ключевые навыки</h3>
+                                    <a class="main-info-item-tags__skills-link tags-link" href="#">Умение готовить</a>
+                                    <a class="main-info-item-tags__skills-link tags-link" href="#">Высокая
+                                        работоспособность</a>
+                                </div>
+                                <div class="main-info-item-tags__lang">
+                                    <h3 class="main-info-item-tags__lang-title">Знание русского</h3>
+                                    <a class="main-info-item-tags__lang-link tags-link" href="#">Рзговаривает
+                                        свободно</a>
+                                </div>
+                                <div class="main-info-item-tags__documents main-info-item-tags-documents">
+                                    <h3 class="main-info-item-tags-documents__title">Наличие документов</h3>
+                                    <div class="main-info-item-tags-documents__box">
+                                        <a class="main-info-item-tags-documents__box-link tags-link"
+                                            href="#">Паспорт</a>
+                                        <a class="main-info-item-tags-documents__box-link tags-link"
+                                            href="#">Регистрация</a>
+                                        <a class="main-info-item-tags-documents__box-link tags-link" href="#">Прививка
+                                            covid</a>
+                                    </div>
+                                </div>
+                                <div class="main-info-item-tags__additional main-info-item-tags-additional">
+                                    <h3 class="main-info-item-tags-additional__title">Дополнительно</h3>
+                                    <div class="main-info-item-tags-additional__box">
+                                        <a class="main-info-item-tags-additional__box-link tags-link" href="#">Полная
+                                            занятость</a>
+                                        <a class="main-info-item-tags-additional__box-link tags-link" href="#">Полный
+                                            день</a>
+                                    </div>
+                                    <a class="main-info-item-tags-additional__link tags-link" href="#">Опыт вождения не
+                                        указан</a>
+                                    <a class="main-info-item-tags-additional__link tags-link" href="#">Готов к
+                                        командировкам</a>
+                                </div>
+                                <div class="main-info-item-tags__education">
+                                    <h3 class="main-info-item-tags__education-title">Образование</h3>
+                                    <a class="main-info-item-tags__education-link tags-link" href="#">9 классов</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="main__resume-data main-resume-data">
+                        <form class="main-resume-data__form" action="#">
+                            <button class="main-resume-data__form-close">
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15.5" cy="15.5" r="15.5" fill="#FF8562" />
+                                    <path
+                                        d="M17.026 15.4991L21.6799 10.8554C21.8837 10.6516 21.9982 10.3751 21.9982 10.0869C21.9982 9.79861 21.8837 9.52216 21.6799 9.31834C21.4761 9.11451 21.1997 9 20.9114 9C20.6232 9 20.3468 9.11451 20.143 9.31834L15.5 13.9728L10.857 9.31834C10.6532 9.11451 10.3768 9 10.0886 9C9.80035 9 9.52394 9.11451 9.32014 9.31834C9.11634 9.52216 9.00185 9.79861 9.00185 10.0869C9.00185 10.3751 9.11634 10.6516 9.32014 10.8554L13.974 15.4991L9.32014 20.1427C9.2187 20.2434 9.13818 20.3631 9.08324 20.495C9.02829 20.6269 9 20.7684 9 20.9113C9 21.0542 9.02829 21.1957 9.08324 21.3276C9.13818 21.4595 9.2187 21.5792 9.32014 21.6798C9.42075 21.7813 9.54045 21.8618 9.67234 21.9168C9.80423 21.9717 9.94569 22 10.0886 22C10.2314 22 10.3729 21.9717 10.5048 21.9168C10.6367 21.8618 10.7564 21.7813 10.857 21.6798L15.5 17.0253L20.143 21.6798C20.2436 21.7813 20.3633 21.8618 20.4952 21.9168C20.6271 21.9717 20.7686 22 20.9114 22C21.0543 22 21.1958 21.9717 21.3277 21.9168C21.4595 21.8618 21.5792 21.7813 21.6799 21.6798C21.7813 21.5792 21.8618 21.4595 21.9168 21.3276C21.9717 21.1957 22 21.0542 22 20.9113C22 20.7684 21.9717 20.6269 21.9168 20.495C21.8618 20.3631 21.7813 20.2434 21.6799 20.1427L17.026 15.4991Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                            <h2 class="main-resume-data__form-title">Оставьте свои данные
+                                и мы с вами свяжемся</h2>
+                            <input type="text" class="main-resume-data__form-input" placeholder="Имя">
+                            <input type="tel" class="main-resume-data__form-input" placeholder="Телефон">
+                            <input type="email" class="main-resume-data__form-input" placeholder="E-mail">
+                            <button class="main-resume-data__form-btn btn" type="submit">Отправить</button>
+                        </form>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
